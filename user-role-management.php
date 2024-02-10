@@ -14,7 +14,12 @@
     }
 
     public function user_role_namagement_function(){
+
+        //Create New Custom role
         add_role('custom_role', 'Custom Role', ['blocked' => true]);
+
+        //Create custom url link
+        add_rewrite_rule( 'custom-role/?$', 'index.php?custom-role=1', 'top' );
     }
  }
 
