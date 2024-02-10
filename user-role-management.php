@@ -2,7 +2,7 @@
 /**
  * Plugin Name: User Role Management
  * Description: A user role management plugin
- * Version: 1.0.0
+ * Version: 4.0.0
  * Author: Gazi Akter
  * Author URI: http://gaziakter.com/
  * Plugin URI: http://gaziakter.com/plugin/user-role-management/
@@ -14,7 +14,7 @@
     }
 
     public function user_role_namagement_function(){
-
+        add_role('custom_role', 'Custom Role', ['blocked' => true]);
     }
  }
 
